@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+	
+	<meta name="viewport" content="width=device-width , initial-scale=1.0">
+
 	<title>YouTube</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -8,6 +11,7 @@
 	
 	<style>
 	
+
 		.body{
 			margin: 0px;
 		}
@@ -168,6 +172,98 @@
 			top: -3px;
 			right: 17px;
 		}
+		
+		.searchbox{
+			flex:1;
+			font-size: 20px;
+			padding-top: 8px;
+			padding-bottom: 8px;
+			padding-left: 8px;
+			border-style: solid;
+			border-color: rgb(203,203,203);
+			border-width: 1px;
+			box-sizing: border-box;
+			border-radius: 7px;
+			box-shadow: inset 1px 1px 3px rgba(0,0,0,0.1);
+		}
+		
+		.searchdiv{
+			width: 500px;
+			display: flex;
+			align-items: center;
+			position: fixed;
+			left: 500px;
+			top: 10px;
+		}
+		.left-section-div{
+			display: flex;
+			flex-direction: row;
+			width: 200px;
+			align-items: center;
+			position: fixed;
+			top: 10px;
+			left: 1320px;
+		}
+		
+		.sidebox-div{
+			margin-left: 20px;
+			margin-right: 20px;
+			margin-top: 15px;
+			margin-bottom: 10px;
+			position: fixed;
+			top: 0px;
+			left: 0px;
+		}
+		@media(max-width: 650px)
+		{
+			.content{
+				grid-template-columns: 1fr ;
+			}
+			
+			.searchbox{
+				flex: 0;
+			}
+			
+			.header{
+				diplay: inline-block;
+				justify-content: none;
+			}
+			
+			.searchdiv{
+				width: 10px;
+				display: flex;
+				align-items: center;
+				position: fixed;
+				left: 210px;
+				top: 10px;
+			}
+			
+			.searchbox{
+				width: 50px;
+				flex: 0;
+			}
+			
+			.left-section-div{
+				display: flex;
+				flex-direction: row;
+				width: 200px;
+				align-items: center;
+				position: fixed;
+				top: 10px;
+				left: 375px;
+		  }
+			
+			.sidebox-div{
+				margin-left: 10px;
+				margin-right: 10px;
+				margin-top: 15px;
+				margin-bottom: 10px;
+				position: fixed;
+				top: 0px;
+				left: 0px;
+			}
+		}
+		
 	</style>
 </head>
 <body class="body">
@@ -175,15 +271,8 @@
 	<div class="main">
 	
   	<div class="sidebox" >
-			<div style="
-				margin-left: 20px;
-				margin-right: 20px;
-				margin-top: 15px;
-				margin-bottom: 10px;
-				position: fixed;
-				top: 0px;
-				left: 0px;
-			">
+			<div 
+			class="sidebox-div">
 				<img src="Icons\hamburger.jpg" style="
 				width: 30px;
 				cursor: pointer;
@@ -202,27 +291,10 @@
 				">
 			</div>
 			
-			<div style="
-				width: 500px;
-				display: flex;
-				align-items: center;
-				position: fixed;
-				left: 500px;
-				top: 10px;
-				
-			">
-					<input type="text-box" placeholder="Search" 
-					style="flex:1;
-								 font-size: 20px;
-								 padding-top: 8px;
-								 padding-bottom: 8px;
-								 padding-left: 8px;
-								 border-style: solid;
-								 border-color: rgb(203,203,203);
-								 border-width: 1px;
-								 box-sizing: border-box;
-								 border-radius: 7px;
-								 box-shadow: inset 1px 1px 3px rgba(0,0,0,0.1);">
+
+			
+			<div class="searchdiv">
+					<input type="text-box" placeholder="Search"  class="searchbox">
 				<div>
 				  <button class="searchbutton">
 						<img src="Icons\search.svg" style="
@@ -246,16 +318,9 @@
 				</div>
 			</div>
 			
-			<div style="
-				display: flex;
-				flex-direction: row;
-				width: 200px;
-				align-items: center;
-				position: fixed;
-				right: 0px;
-				top: 10px;
-				left: 1320px;
-			">
+			<div 
+			class="left-section-div"
+			>
 				<div style="
 					flex: 1;
 				">
@@ -274,9 +339,11 @@
 					">
 				</div>
 				
+				
 				<div style="
 					flex: 1;
 					position: relative;
+					right: 5px;
 				">
 					<img src="Icons\bell.svg" style="
 						height: 30px;
@@ -289,6 +356,8 @@
 				
 				<div style="
 					flex: 1;
+					position: relative;
+					right: 3px;
 				">
 					<img src="Icons\profile.png" style="
 						height: 37px;
@@ -780,7 +849,7 @@
 				position: relative;
 			">
 				<a href=		"https://www.youtube.com/watch?v=SKPYYvlb-Lc">
-			 <img src="Thumbnails\thumbnail8.jpg" class="thumbnail1">
+			 <img src="Thumbnails\Thumbnail8.jpg" class="thumbnail1">
 			  </a>
 				<div class="videotime">
 					18:45
@@ -946,7 +1015,7 @@
 				position: relative;
 			">
 				<a href=		"https://www.youtube.com/watch?v=094y1Z2wpJg">
-			 <img src="Thumbnails\thumbnail11.jpg" class="thumbnail1">
+			 <img src="Thumbnails\Thumbnail11.jpg" class="thumbnail1">
 			  </a>
 				<div class="videotimelast4">
 					22:08
@@ -989,7 +1058,7 @@
 				position: relative;
 			">
 				<a href=		"https://www.youtube.com/watch?v=n2RNcPRtAiY">
-			 <img src="Thumbnails\thumbnail12.jpg" class="thumbnail1">
+			 <img src="Thumbnails\Thumbnail12.jpg" class="thumbnail1">
 			  </a>
 				<div class="videotimelast4">
 					14:20
@@ -1031,6 +1100,7 @@
 		</div>
 		
 	</div>
+	
 	
 </body>
 </html>
