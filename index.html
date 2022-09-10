@@ -43,9 +43,9 @@
 			height: 1060px;
 			display: grid;
 			grid-template-columns: 1fr 1fr 1fr 1fr;
-			margin-right: 5px;
+			margin-right: 0px;
 			margin-top: 70px;
-			padding-right: 10px;
+			padding-right: 15px;
 		}
 		
 		.thumbnail1{
@@ -203,7 +203,7 @@
 			align-items: center;
 			position: fixed;
 			top: 10px;
-			left: 1320px;
+			left: 1310px;
 		}
 		
 		.sidebox-div{
@@ -215,6 +215,14 @@
 			top: 0px;
 			left: 0px;
 		}
+		
+		.youtube-icon{
+			width: 130px;
+			margin-top: 16px;
+			margin-left: 3px;
+			z-index: 5;
+		}
+		
 		@media(max-width: 650px)
 		{
 			.content{
@@ -229,6 +237,7 @@
 			.header{
 				diplay: inline-block;
 				justify-content: none;
+				left: 10px;
 			}
 			
 			.searchdiv{
@@ -236,7 +245,7 @@
 				display: flex;
 				align-items: center;
 				position: fixed;
-				left: 210px;
+				left: 120px;
 				top: 10px;
 			}
 			
@@ -248,11 +257,11 @@
 			.left-section-div{
 				display: flex;
 				flex-direction: row;
-				width: 200px;
+				width: 160px;
 				align-items: center;
 				position: fixed;
 				top: 10px;
-				left: 375px;
+				left: 310px;
 		  }
 			
 			.sidebox-div{
@@ -264,6 +273,33 @@
 				top: 0px;
 				left: 0px;
 			}
+			
+			.main{
+				grid-template-columns: 1fr;
+			}
+			
+			.sidebox{
+				display: none;
+				width: 0px;
+			}
+			
+			.youtube-icon{
+				width: 80px;
+				margin-top: 20px;
+				margin-left: 10px;
+				z-index: 5;
+				}
+		
+			.videotime{
+				right: 5px;
+				bottom: 140px;
+			}
+			
+			.bellnotific{
+				top: -3px;
+				right: 7px;
+			}
+			
 		}
 		
 	</style>
@@ -285,12 +321,9 @@
 		
 		<div class="header">
 			<div >
-				<img src="Icons\youtube.svg" style="
-					width: 130px;
-					margin-top: 16px;
-					margin-left: 3px;
-					z-index: 5;
-				">
+				<img src="Icons\youtube.svg" 
+				class="youtube-icon"
+				>
 			</div>
 			
 
@@ -907,9 +940,9 @@
 				position: relative;
 			">
 				<a href=		"https://www.youtube.com/watch?v=mP0RAo9SKZk">
-			 <img src="Thumbnails\Thumbnail9.jpg" class="thumbnail1">
+			 <img src="Thumbnails\thumbnail9.jpg" class="thumbnail1">
 			  </a>
-				<div class="videotimelast4">
+				<div class="videotimelast4" >
 					8:21
 				  </div>
 				<div class="all">
