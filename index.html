@@ -229,12 +229,26 @@
 			align-items: center;
 			justify-content: space-between;
 		}
+		.voice-search-style{
+			width:30px;
+		}
+		
+		.search-button-style{
+			width: 28px;
+			height: 25px;
+			padding-left: 12px;
+			padding-right: 12px;
+			padding-top: 5px;
+			padding-bottom: 3px;
+			color: rgb(240,240,240);
+		}
 		
 		@media(max-width: 650px)
 		{
 			.content{
 				grid-template-columns: 1fr ;
 				padding-right: 10px;
+				margin-top: 170px;
 			}
 			
 			.searchbox{
@@ -307,13 +321,16 @@
 				right: 7px;
 			}
 			
-			siderbar-div-style{
+			.siderbar-div-style{
 				display: flex;
 				flex-direction: row;
 				align-items: center;
 				justify-content: space-between;
+				background-color: white;
 				}
-			
+			.sidebar{
+				z-index: 100;
+			}
 		}
 		
 	</style>
@@ -346,23 +363,17 @@
 					<input type="text-box" placeholder="Search"  class="searchbox">
 				<div>
 				  <button class="searchbutton">
-						<img src="Icons\search.svg" style="
-							width: 28px;
-							height: 25px;
-							padding-left: 12px;
-							padding-right: 12px;
-							padding-top: 5px;
-							padding-bottom: 3px;
-							color: rgb(240,240,240);
-						">
+						<img src="Icons\search.svg" 
+						class="search-button-style"
+						>
 					</button>
 				</div>
 				
 				<div>
 				<button class="voicesearch">
-					<img src="Icons\voice.svg" style="
-						width:30px;
-					">
+					<img src="Icons\voice.svg" 
+					class="voice-search-style"
+					>
 				</button>
 				</div>
 			</div>
@@ -425,6 +436,7 @@
 				<div style="
 					flex: 1;
 				"
+
 				class="sidebardiv">
 					<img src="Icons\home.svg" style="
 					height: 40px;
@@ -440,6 +452,7 @@
 				<div style="
 					flex: 1;
 				"
+
 				class="sidebardiv">
 					<img src="Icons\explore.svg" style="
 					height: 40px;
@@ -895,7 +908,7 @@
 				position: relative;
 			">
 				<a href=		"https://www.youtube.com/watch?v=SKPYYvlb-Lc">
-			 <img src="Thumbnails\thumbnail8.jpg" class="thumbnail1">
+			 <img src="Thumbnails\Thumbnail8.jpg" class="thumbnail1">
 			  </a>
 				<div class="videotime">
 					18:45
@@ -1061,7 +1074,7 @@
 				position: relative;
 			">
 				<a href=		"https://www.youtube.com/watch?v=094y1Z2wpJg">
-			 <img src="Thumbnails\thumbnail11.jpg" class="thumbnail1">
+			 <img src="Thumbnails\Thumbnail11.jpg" class="thumbnail1">
 			  </a>
 				<div class="videotimelast4">
 					22:08
@@ -1104,7 +1117,7 @@
 				position: relative;
 			">
 				<a href=		"https://www.youtube.com/watch?v=n2RNcPRtAiY">
-			 <img src="Thumbnails\thumbnail12.jpg" class="thumbnail1">
+			 <img src="Thumbnails\Thumbnail12.jpg" class="thumbnail1">
 			  </a>
 				<div class="videotimelast4">
 					14:20
